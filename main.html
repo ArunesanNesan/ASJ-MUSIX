@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ASJ musix</title>
+        <link rel="icon" href="logo.png" type="img/x-icon"> 
+        <link rel="stylesheet"  type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="name">ASJ</a>
+            <ul>
+                <li><a href="menu.html" class="menu">Home  </a></li>
+                <li><a href="events.html" class="">Events</a></li>
+                <li><a href="login.html" class="ab">learning</a></li>
+                <li><a href="contact.html" class="cont" type="button">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mb">
+            <h3  id="txt"> It's all about Music</h3>
+            <a href="login.html" id="btn">let's Go!!</a>
+            <img src="mountains_front.png" id="mf">
+        </section>
+       <div class="sec"  id="sec">
+        <h2>ASJ MUSIX</h2>
+        <p>
+            ASJ musix is the production house which run all over tamilnadu.it's head branch was at coimbatore.
+            The founder of the ASJ musix are Mr.AJAI.k,Mr.SAMUEL JAYSON,Mr.ELANGO,They are head of the ASj musix.<br><br>
+            under this production house several catogeris of ARTS are explored and give that out for a people for awarness.
+            the main motive of ASJ musix is to make a underground artist to glow.for that they do a originals song series
+            named "TRIGGERED DEMON". 
+        </p>
+       </div>
+        <script>
+            let stars=document.getElementById('stars');
+            let moon=document.getElementById('moon');
+            let mb=document.getElementById('mb');
+            let mf=document.getElementById('mf');
+            let txt=document.getElementById('txt');
+            let btn=document.getElementById('btn');
+            let header=document.querySelector('header');
+
+            window.addEventListener('scroll',function(){
+               let v=window.scrollY;
+               stars.style.left=v *0.50+'px';
+               moon.style.top=v *1.5+'px'; 
+               txt.style.marginRight=v *4+'px'; 
+               txt.style.marginTop=v*1.5+'px';
+               btn.style.marginTop=v*1.5+'px';
+               header.style.top=v*0.5+'px';
+            })
+        </script>
+    </body>
+</html>
